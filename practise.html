@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - IM. C</title>
+</head>
+<style>
+    nav{
+        text-align: center;
+        background-color: #333;
+        padding: 10px;
+    }
+    a{
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+    }
+    .header{
+        color: black;
+        text-align: center;
+        background-color: gray;
+        padding: 10px;
+    }
+    table, th, td{
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 10px;
+    }
+</style>
+<body>
+    <nav>
+        <a href = "#summery">Professional Summery</a>
+        <a href = "#experience">Work Experience</a>
+        <a href = "#education">Education</a>
+        <a href = "#skills">Skills</a>
+        <a href = "#projects">Projects</a>
+        <a href = "#languages">Languages</a>
+        <a href = "#contact">Contact Me</a>
+    </nav>
+    <div class="header">
+    <h2>IM CHHEANGNGIM</h2>
+    <p>Email: cuberjohnny9@gmail.com | Phone: 0977524280<br>
+        Address: 123 Main Street, Phnom Penh, Cambodia</p>
+    </div>
+
+    <section id = "summery">
+        <h2>Professional Summery</h2>
+        <p>I like bread</p>
+    </section>
+
+    <section id = "experience">
+        <h2>Work Experience</h2>
+        <p>N/A</p>
+    </section>
+
+    <section id = "education">
+        <h2>Education</h2>
+        <ol>
+            <li>Institute of Technology of Cambodia</li>
+            <li>Institute of Foreign Languages</li>
+        </ol>
+    </section>
+
+    <section id = "skills">
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <th>Programming Languages</th>
+                <th>Framework</th>
+                <th>Tools</th>
+            </tr>
+            <tr>
+                <td>JavaScript, TypeScript, Java</td>
+                <td>Next.js, Node.js, NestJS</td>
+                <td>Git, Docker, Nginx</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>Laravel</td>
+                <td>VS Code, Linux Experience</td>
+        </table>
+    </section>
+
+    <section id = "projects">
+        <h2>Projects</h2>
+        <h3>Mock Exam System</h3>
+        <p>Developed a mock exam system for ITC students to practice for their final exams. The system is built using Next.js and NestJS.</p>
+        <h3>Portfolio Website</h3>
+        <p>Designed and developed a personal portfolio website to showcase my skills and projects.</p>
+    </section>
+    <section id = "languages">
+        <h2>Languages</h2>
+        <ul>
+            <li>Khmer: native</li>
+            <li>English: Intermediate</li>
+            <li>French: Beginner</li>
+        </ul>
+    </section>
+
+    <section id = "contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <fieldset style="border: 1px solid #ccc; padding: 10px;">
+                <legend>Contact Form</legend>
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
