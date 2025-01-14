@@ -5,56 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .column{
-            border: 1px solid black;
-            background-color: lightgray;
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-            height: 200px;
+        .Cgrid{
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            margin: 5px;
+            grid-template-columns: auto auto auto; 
+            justify-content: space-evenly;
+            background-color: orange;
         }
-        .row{
-            border: 1px solid black;
-            background-color: lightgray;
-            display: flex;
-            flex-direction: row;
-            width: 200px;
-            height: 200px;
+        .Rgrid{
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            margin: 5px;
+            grid-template-rows: auto auto auto; 
+            justify-content: space-evenly;
+            background-color: orange;
         }
-        .center{
-            flex-grow: 1;
+        .box{
             width: 50px;
             height: 50px;
-            align-self: center;
-            background-color: orange
+            background-color: blue;
         }
-        .flexEnd{
-            flex-grow: 1;
-            width: 50px;
-            height: 50px;
-            align-self: flex-end;
-            background-color: orange;            
+        .center {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+        }
+        .end {
+            border: 1px solid black;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <div style="display: flex; flex-wrap: wrap; width: 405px;">
-        <div class="row">
-            <div class="center"></div>
-        </div>
 
-        <div class="row">
-            <div class="flexEnd"></div>
+        <div class="center">
+            <div class="Cgrid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
         </div>
-
-        <div class="column">
-            <div class="center"></div>
+    
+        <div class="center">
+            <div class="Rgrid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
         </div>
-
-        <div class="column">
-            <div class="flexEnd"></div>
+        
+        <div class="end">
+            <div class="Cgrid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    
+        <div class="end">
+            <div class="Rgrid">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
         </div>
 
     </div>
+    
 </body>
 </html>
