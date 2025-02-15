@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    
+    <style>
+        .background{
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .color{
+            background-color: orange;
+        }
+        .top{
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            translate: 30px 20px;
+        }
+        .bottom{
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            translate: 30px 50px;
+        }
+        .center{
+            position: relative;
+            width: 30px;
+            height: 100px;
+            translate: 85px 50px;
+        }
+        .left{
+            position: relative;
+            width: 30px;
+            height: 100px;
+            translate: 30px 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="display: flex; flex-wrap: wrap; width: 1000px;">
+        <div class="background">
+            <div class="color top"></div>
+            <div class="color center"></div>
+            <div class="color bottom"></div>
+        </div>
+        <div class="background">
+            <div class="color top"></div>
+            <div class="color center" style="height: 130px;"></div>
+        </div>
+        <div class="background">
+            <div class="color top"></div>
+            <div class="color left"></div>
+            <div class="color bottom"></div>
+        </div>
+
+
+    </div>
+</body>
+</html>
