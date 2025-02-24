@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        #border {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 300px;
+            height: 500px;
+            border: 5px solid black;
+            background-color: white;
+        }
+        #count {
+            color: green;
+            font-size: 80px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        button:hover {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="border">
+            <label style="font-size: 50px;">Counter</label><br>
+            <label id="count">0</label><br>
+            <div>
+                <button id="decrease">decrease</button>
+                <button id="reset">reset</button>
+                <button id="increase">increase</button>
+            </div>
+        </div>
+
+    <script>
+        class counter{
+            number = 0;
+            increase(){
+                this.number++;
+                this.display();
+            }
+            decrease(){
+                this.number--;
+                this.display();
+            }
+            reset(){
+                this.number = 0;
+                this.display();
+            }
+            display(){
+                const display = document.getElementById('count');
+                display.textContent = this.number;
+            }
+        }
+        let count = new counter();
+        document.getElementById('increase').onclick = function() {
+            count.increase();
+        };
+        document.getElementById('decrease').onclick = function() {
+            count.decrease();
+        };
+        document.getElementById('reset').onclick = function() {
+            count.reset();
+        };
+    </script>
+</body>
+</html>
